@@ -40,7 +40,7 @@ namespace EdB.PrepareCarefully {
 
         public void Initialize() {
             CharacterCardUtility_WorkTagsFrom = ReflectionUtil.RequiredMethod(typeof(CharacterCardUtility), "WorkTagsFrom");
-            GraphicDatabaseHeadRecords_BuildDatabaseIfNecessary = ReflectionUtil.RequiredMethod(typeof(GraphicDatabaseHeadRecords), "BuildDatabaseIfNecessary");
+            /GraphicDatabaseHeadRecords_BuildDatabaseIfNecessary = ReflectionUtil.RequiredMethod(typeof(GraphicDatabase), "BuildDatabaseIfNecessary");
             GenFilePaths_FolderUnderSaveData = ReflectionUtil.RequiredMethod(typeof(GenFilePaths), "FolderUnderSaveData", new Type[] { typeof(string) });
 
             PawnBioAndNameGenerator_GetBackstoryCategoryFiltersFor = ReflectionUtil.RequiredMethod(typeof(PawnBioAndNameGenerator), "GetBackstoryCategoryFiltersFor",

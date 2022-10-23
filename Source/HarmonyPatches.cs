@@ -66,7 +66,7 @@ namespace EdB.PrepareCarefully {
             static void Postfix(Page_ConfigureStartingPawns __instance, ref Rect rect) {
                 Vector2 BottomButSize = new Vector2(150f, 38f);
                 float num = rect.height + 45f;
-                Rect rect4 = new Rect(rect.x + rect.width / 2f - BottomButSize.x / 2f, num, BottomButSize.x, BottomButSize.y);
+                Rect rect4 = new Rect(rect.x + rect.width / 1.5f - BottomButSize.x / 1.5f, num, BottomButSize.x, BottomButSize.y);
                 if (Widgets.ButtonText(rect4, "EdB.PC.Page.Button.PrepareCarefully".Translate(), true, false, true)) {
                     // Version check
                     if (VersionControl.CurrentVersion < PrepareCarefully.MinimumGameVersion) {

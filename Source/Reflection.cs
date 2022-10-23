@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using Verse;
 
 namespace EdB.PrepareCarefully {
@@ -31,12 +31,12 @@ namespace EdB.PrepareCarefully {
         }
         public static class PawnSkinColors {
             public static int GetSkinDataIndexOfMelanin(float value) {
-                return (int)ReflectionCache.Instance.PawnSkinColors_GetSkinDataIndexOfMelanin.Invoke(null, new object[] { value });
+                return 0;
             }
         }
         public static class GraphicDatabaseHeadRecords {
             public static void BuildDatabaseIfNecessary() {
-                ReflectionCache.Instance.GraphicDatabaseHeadRecords_BuildDatabaseIfNecessary.Invoke(null, null);
+                //ReflectionCache.Instance.GraphicDatabaseHeadRecords_BuildDatabaseIfNecessary.Invoke(null, null);
             }
         }
         public static class Pawn {

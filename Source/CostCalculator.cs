@@ -16,6 +16,7 @@ namespace EdB.PrepareCarefully {
         public double bionics = 0;
         public double animals = 0;
         public double marketValue = 0;
+
         public void Clear() {
             total = 0;
             passions = 0;

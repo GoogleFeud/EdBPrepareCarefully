@@ -78,8 +78,8 @@ namespace EdB.PrepareCarefully {
                 false, //bool allowDead = false,
                 false, //bool allowDowned = false,
                 false, //bool canGeneratePawnRelations = true,
-                mustBeCapableOfViolence, //bool mustBeCapableOfViolence = false,
-                0f, //float colonistRelationChanceFactor = 1f,
+                0, //bool mustBeCapableOfViolence = false,
+                false, //float colonistRelationChanceFactor = 1f,
                 false, //bool forceAddFreeWarmLayerIfNeeded = false,
                 true, //bool allowGay = true,
                 false, //bool allowFood = true,
@@ -104,7 +104,7 @@ namespace EdB.PrepareCarefully {
                 null, // string fixedLastName = null
                 null, //string fixedBirthName = null, 
                 null, //RoyalTitleDef fixedTitle = null
-                fixedIdeology, //Ideo fixedIdeo = null
+                false, //Ideo fixedIdeo = null
                 false, //bool forceNoIdeo = false
                 false //bool forceNoBackstory = false
             ) {

@@ -97,8 +97,8 @@ namespace EdB.PrepareCarefully {
             return DefDatabase<HairDef>.GetNamedSilentFail(name);
         }
 
-        public Backstory FindBackstory(string name) {
-            return BackstoryDatabase.allBackstories.Values.ToList().Find((Backstory b) => {
+        public BackstoryDef FindBackstory(string name) {
+            return DefDatabase<BackstoryDef>.AllDefs.ToList().Find((BackstoryDef b) => {
                 return b.identifier.Equals(name);
             });
         }
